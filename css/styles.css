@@ -66,6 +66,9 @@ nav ul li a:hover {
     font-size: 36px;
     margin-bottom: 10px;
     color: #000;
+    border-bottom: 2px solid #d16ba5;
+    display: inline-block;
+    padding-bottom: 5px;
 }
 
 .intro p {
@@ -76,6 +79,11 @@ nav ul li a:hover {
 /* Background section */
 #background {
     margin-bottom: 40px;
+}
+
+#background p {
+    font-size: 16px;
+    color: #666;
 }
 
 h2 {
@@ -118,12 +126,99 @@ p {
 /* Footer */
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     background-color: #fff;
-    margin-top: 50px;
-    border-top: 1px solid #ddd;
+    /* margin-top: 50px;
+    border-top: 1px solid #ddd; */
 }
 
 footer p {
     color: #888;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    gap: 10px; /* Add spacing between icons */
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* .contact-text {
+    text-align: center; 
+    margin-top: 40px; 
+  } */
+
+  /* Achivements section */
+#achivements .achivements {
+    margin-bottom: 20px;
+}
+
+#achivements h3 {
+    font-size: 22px;
+    color: #000;
+}
+
+#achivements p {
+    font-size: 16px;
+    color: #666;
+}
+
+#achivements a {
+    text-decoration: none;
+    color: #d16ba5;
+}
+
+#achivements a:hover {
+    text-decoration: underline;
+}
+
+.skills-header {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #000;
+    border-bottom: 2px solid #d16ba5;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+.skills-icons {
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    gap: 10px; /* Add spacing between icons */
+  }
+  
+  .skills-icons img {
+    width: 50px;
+    height: 50px;
+  }
+  .skills-icons i {
+    font-size: 50px; /* Adjust size as needed */
+    color: #333; /* Adjust color as needed */
+  }
+
+  /* skills section */
+
+#skills {
+    margin-bottom: 40px;
+}
+
+#skills p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* #skills h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #000;
+    border-bottom: 2px solid #d16ba5;
+    display: inline-block;
+    padding-bottom: 5px;
+} */
+
+#skills p {
+    margin: 10px 0;
 }
