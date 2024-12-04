@@ -337,3 +337,65 @@ body.dark-mode footer {
     background-color: #1f1f1f;
     color: #b0b0b0;
 }
+
+
+
+body.dark-mode #background p {
+    font-size: 16px;
+    color: #d0d0d0; /* Light gray text for readability */
+}
+
+/* Achievements section in dark mode */
+body.dark-mode #achivements .achivements {
+    margin-bottom: 20px;
+    background-color: #1f1f1f; /* Dark background for the section */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners for a softer look */
+}
+
+body.dark-mode #achivements h3 {
+    font-size: 22px;
+    color: #ffd700; /* Gold color for headings */
+}
+
+body.dark-mode #achivements p {
+    font-size: 16px;
+    color: #d0d0d0; /* Light gray text for readability */
+}
+
+body.dark-mode #achivements a {
+    text-decoration: none;
+    color: #d16ba5; /* Link color */
+}
+
+body.dark-mode #achivements a:hover {
+    text-decoration: underline;
+    color: #ff6f91; /* Hover color change for links */
+}
+/* Project section in dark mode */
+body.dark-mode #projects .project {
+    margin-bottom: 20px;
+    background-color: #1f1f1f; /* Dark background for the project item */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+}
+
+body.dark-mode #projects h3 {
+    font-size: 22px;
+    color: #ffd700; /* Gold color for headings in dark mode */
+}
+
+body.dark-mode #projects p {
+    font-size: 16px;
+    color: #d0d0d0; /* Light gray text for better readability */
+}
+
+body.dark-mode #projects a {
+    text-decoration: none;
+    color: #d16ba5; /* Link color */
+}
+
+body.dark-mode #projects a:hover {
+    text-decoration: underline;
+    color: #ff6f91; /* Hover color for links */
+}
