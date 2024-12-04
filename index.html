@@ -8,25 +8,36 @@
     <title>rjboga - Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="images/boy.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
     <header>
-        <nav style="display: flex; justify-content: center;">
+        <nav style="display: flex; justify-content: space-between; align-items: center;">
             <ul>
                 <li><a href="index.html">about</a></li>
                 <li><a href="#projects">projects</a></li>
                 <li><a href="#publications">publications</a></li>
-                <li><a href="#repositories">repositories</a></li>
-                <li><a href="images/cv.pdf">cv</a></li>
+                <li><a href="https://github.com/RJBOGA">repositories</a></li>
+                <li><a href="images/rjboga cv.pdf">cv</a></li>
                 <li><a href="#contact">contact</a></li>
+                <li id="night-mode-toggle" class="fa-solid fa-moon" title="Toggle Night Mode"></li>
             </ul>
+            <!-- Moon icon for night mode toggle -->
+            
         </nav>
     </header>
-
+    
+    <!-- Your content here -->
     <section id="main-content">
         <div class="container">
-            <img src="images/profile.jpg" alt="Raju Boga" class="profile-pic">
+            <!-- <img src="images/dp.jpg" alt="Raju Boga" class="profile-pic"> -->
+            <a href="images/dp.jpg" class="lightbox">
+                <figure>
+                    <img src="images/dp.jpg" alt="Raju Boga" class="profile-pic">
+                    
+                </figure>
+            </a>
             <div class="intro">
                 <h1><strong>namasthe <img src="images/namaste.png" alt="namaskaram" class="namasthe"></strong></h1><br>
                 <h1><strong>i'm raju</strong></h1>
@@ -105,16 +116,7 @@
             
         </div>
     </section>
-
-    <section id="publications">
-        <div class="container">
-            <h2>my publications</h2>
-            <div class="project">
-                <h3>pm for the future research project (2023-2024)</h3>
-                <p>i conducted text analytics using machine learning to analyze a collection of research papers and identify emerging trends in project management methodologies. i employed natural language processing (nlp) techniques to extract key topics and classify them, which allowed for deeper insight into the evolution of project management practices. the findings from my analysis were compiled into a research paper, which i'm proud to say was accepted for presentation at the dsi conference. this project not only enhanced my skills in machine learning and nlp but also provided valuable insights into the current state and future direction of project management practices.</p>
-            </div>
-        </div>
-    </section>
+    <br>
 
     <section id="achivements">
         <div class="container">
@@ -135,6 +137,33 @@
         </div>
     </section>
 
+    <section id="publications">
+        <div class="container">
+            <h2>my publication</h2>
+            <div class="project">
+                <h3>pm for the future research project (2023-2024)</h3> <a href="https://decisionsciences.org/publication/proceeding/2024-annual-conference-of-the-decision-sciences-institute-proceedings/"
+                target="_blank">read full paper here. (page 1043)</a>
+                <p>i conducted text analytics using machine learning to analyze a collection of research papers and identify emerging trends in project management methodologies. i employed natural language processing (nlp) techniques to extract key topics and classify them, which allowed for deeper insight into the evolution of project management practices. the findings from my analysis were compiled into a research paper, which i'm proud to say was accepted for presentation at the dsi conference. this project not only enhanced my skills in machine learning and nlp but also provided valuable insights into the current state and future direction of project management practices.</p>
+            </div>
+            <div class="images-container">
+                <a href="images/paper.pdf" class="lightbox">
+                    <figure>
+                        <img src="images/image.png" alt="Research Paper" class="publication-image">
+                        <figcaption>research paper</figcaption>
+                    </figure>
+                </a>
+                <a href="images/presentation.jpg" class="lightbox">
+                    <figure>
+                        <img src="images/presentation.jpg" alt="Presenting Paper" class="publication-image">
+                        <figcaption>presenting at the conference</figcaption>
+                    </figure>
+                </a>
+            </div>
+        </div>
+    </section>
+    <br>
+      
+
     <section id="contact">
 
         <nav style="display: flex; justify-content: center;">
@@ -147,9 +176,9 @@
                     <li><a href="https://www.linkedin.com/in/rjboga">
                             <img src="images/linkedin.png" alt="LinkedIn">
                         </a></li>
-                    <li><a href="tel:+19132078061">
+                    <!-- <li><a href="tel:+19132078061">
                             <img src="images/mobile.png" alt="Phone">
-                        </a></li>
+                        </a></li> -->
                     <li><a href="mailto:rxb42770@ucmo.edu">
                             <img src="images/email.png" alt="Email">
                         </a></li>
@@ -159,9 +188,9 @@
                     <li><a href="https://discord.com/users/rjboga">
                             <img src="images/discord.png" alt="Discord">
                         </a></li>
-                    <li><a href="https://wa.me/+19132078061">
+                    <!-- <li><a href="https://wa.me/+19132078061">
                             <img src="images/whatsapp.png" alt="WhatsApp">
-                        </a></li>
+                        </a></li> -->
                 </ul>
             </div>
             <br>
@@ -174,12 +203,7 @@
         </nav>
 
     </section>
-
-    <!-- <footer>
-        <div class="container">
-            <p>&copy; 2024 Raju Boga</p>
-        </div>
-    </footer> -->
+    
+    <script src="script.js"></script>
 </body>
-
 </html>

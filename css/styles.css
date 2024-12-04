@@ -133,6 +133,15 @@ p {
     text-decoration: underline;
 }
 
+#publications a {
+    text-decoration: none;
+    color: #d16ba5;
+}
+
+#publications a:hover {
+    text-decoration: underline;
+}
+
 /* Footer */
 footer {
     text-align: center;
@@ -231,4 +240,100 @@ footer p {
 
 #skills p {
     margin: 10px 0;
+}
+
+.images-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between images */
+    margin-top: 20px;
+}
+
+.publication-image {
+    width: 200px; /* Adjust the size of the images */
+    height: auto;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for aesthetics */
+}
+
+figure {
+    text-align: center; /* Center the caption below the image */
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* General dark mode styling for all sections */
+body.dark-mode {
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+}
+
+/* Navigation bar in dark mode */
+body.dark-mode nav {
+    background-color: #1f1f1f; /* Slightly lighter than body background */
+    border-bottom: 1px solid #333;
+}
+
+body.dark-mode nav ul li a {
+    color: #e0e0e0;
+}
+
+body.dark-mode nav ul li a:hover {
+    color: #ffd700; /* Highlight effect */
+}
+
+/* Section headers in dark mode */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+    color: #ffd700; /* Golden color for standout effect */
+    border-bottom-color: #ffd700;
+}
+
+/* Paragraphs in dark mode */
+body.dark-mode p {
+    color: #d0d0d0; /* Slightly dimmed light color for better readability */
+}
+
+/* Links in dark mode */
+body.dark-mode a {
+    color: #ffd700;
+}
+
+body.dark-mode a:hover {
+    color: #ffb400;
+}
+
+/* Cards or container sections in dark mode */
+body.dark-mode .container {
+    background-color: #1e1e1e; /* Darker background for sections */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow effect */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Images in dark mode */
+body.dark-mode .publication-image {
+    box-shadow: 0 6px 12px rgba(255, 215, 0, 0.3); /* Glow effect */
+}
+
+/* Skills and icons in dark mode */
+body.dark-mode .skills-icons img,
+body.dark-mode .social-icons img {
+    filter: brightness(1.2); /* Brighten icons slightly */
+}
+
+body.dark-mode .skills-icons i,
+body.dark-mode .social-icons i {
+    color: #ffd700; /* Match the golden theme */
+}
+
+/* Footer in dark mode */
+body.dark-mode footer {
+    background-color: #1f1f1f;
+    color: #b0b0b0;
 }
