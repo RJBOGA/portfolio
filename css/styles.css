@@ -20,6 +20,12 @@ body {
     overflow: hidden;
 }
 
+.container2 {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
 /* Navigation styling */
 nav {
     background-color: #fff;
