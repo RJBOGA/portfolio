@@ -23,6 +23,11 @@ export interface Experience {
   current: boolean;
 }
 
+export interface ProjectLink {
+  label: string;
+  url: string;
+}
+
 export interface Project {
   id: string;
   name: string;
@@ -32,6 +37,7 @@ export interface Project {
   image: string;
   liveUrl?: string;
   githubUrl?: string;
+  links?: ProjectLink[];
 }
 
 export interface Achievement {

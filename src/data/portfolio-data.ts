@@ -132,14 +132,20 @@ export const projects: Project[] = [
       "https://images.pexels.com/photos/29652324/pexels-photo-29652324.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
   },
   {
-    id: "proj-alumni",
-    name: "Alumni Services App",
-    tagline: "A modern home for a life-long community",
+    id: "proj-schoolpool",
+    name: "SchoolPool",
+    tagline: "Safer school carpools, powered by real-time crime intel",
     description:
-      "Re-imagined the alumni experience from a dated portal into a snappy, mobile-first web app — event RSVPs, giving, mentorship, and directory search, all glued together with a bespoke design system.",
-    techStack: ["Angular", "Java", "AWS", "Design System"],
+      "A full-stack carpool platform for parents to coordinate school rides — with an integrated crime-news analyzer that scans and scores routes before a booking is confirmed, so families ride with context, not guesswork.",
+    techStack: ["React", "Spring Boot", "PostgreSQL", "News API"],
     image:
       "https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGxpZ2h0JTIwZmx1aWQlMjBtaW5pbWFsJTIwYmFja2dyb3VuZHxlbnwwfHx8d2hpdGV8MTc4NDUwODI1OHww&ixlib=rb-4.1.0&q=85",
+    liveUrl: "https://github.com/RJBOGA/school-pool-frontend",
+    links: [
+      { label: "Frontend", url: "https://github.com/RJBOGA/school-pool-frontend" },
+      { label: "Backend", url: "https://github.com/RJBOGA/schoolpool-be" },
+      { label: "Crime News API", url: "https://github.com/RJBOGA/newsapi" },
+    ],
   },
 ];
 
