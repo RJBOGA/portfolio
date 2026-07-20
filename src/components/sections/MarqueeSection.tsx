@@ -1,8 +1,20 @@
-import { skillGroups } from "@/data/portfolio-data";
+const aiSkills = [
+  "LLM Agents",
+  "GenAI",
+  "Prompt Engineering",
+  "RAG",
+  "Foundation Models",
+  "LLMs",
+  "VLMs",
+  "Applied ML",
+  "YOLO",
+  "OpenCV",
+  "Pandas",
+  "NumPy",
+];
 
 export default function MarqueeSection() {
-  const items = skillGroups.flatMap((g) => g.skills);
-  const track = [...items, ...items];
+  const track = [...aiSkills, ...aiSkills];
 
   return (
     <section className="py-16 md:py-24 border-y border-[#f0f0f2] bg-white" aria-label="Skills marquee">
