@@ -134,9 +134,9 @@ export const projects: Project[] = [
   {
     id: "proj-schoolpool",
     name: "SchoolPool",
-    tagline: "Safer school carpools, powered by real-time crime intel",
+    tagline: "Peer-to-peer campus rides, powered by real-time crime intel",
     description:
-      "A full-stack carpool platform for parents to coordinate school rides — with an integrated crime-news analyzer that scans and scores routes before a booking is confirmed, so families ride with context, not guesswork.",
+      "A full-stack peer-to-peer ride-sharing platform that connects university students for safe, affordable, and convenient campus travel — with dedicated experiences for Students, Drivers, and Admins. An integrated crime-news analyzer scans and scores routes before a booking is confirmed, so students ride with context, not guesswork.",
     techStack: ["React", "Spring Boot", "PostgreSQL", "News API"],
     image:
       "https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGxpZ2h0JTIwZmx1aWQlMjBtaW5pbWFsJTIwYmFja2dyb3VuZHxlbnwwfHx8d2hpdGV8MTc4NDUwODI1OHww&ixlib=rb-4.1.0&q=85",
