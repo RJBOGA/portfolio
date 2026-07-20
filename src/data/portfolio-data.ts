@@ -147,6 +147,20 @@ export const projects: Project[] = [
       { label: "Crime News API", url: "https://github.com/RJBOGA/newsapi" },
     ],
   },
+  {
+    id: "proj-jobchat",
+    name: "JobChat.AI",
+    tagline: "A conversational job portal that speaks plain English",
+    description:
+      "A conversational job portal where users find roles, manage applications, and query data by simply typing what they want. An NL2GQL service translates natural language into live GraphQL queries in real time, backed by a Flask API, MongoDB, and an LLM — with a React chat UI, secure bcrypt auth, and a collapsible view to inspect the raw GraphQL and JSON behind every answer.",
+    techStack: ["React", "Python", "Flask", "GraphQL", "MongoDB", "LLM"],
+    image:
+      "https://images.unsplash.com/photo-1587560699334-cc4ff634909a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGxpZ2h0JTIwZmx1aWQlMjBtaW5pbWFsJTIwYmFja2dyb3VuZHxlbnwwfHx8d2hpdGV8MTc4NDUwODI1OHww&ixlib=rb-4.1.0&q=85",
+    liveUrl: "https://github.com/RJBOGA/JAP",
+    links: [
+      { label: "GitHub", url: "https://github.com/RJBOGA/JAP" },
+    ],
+  },
 ];
 
 export const achievements: Achievement[] = [
