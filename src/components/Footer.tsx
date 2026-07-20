@@ -7,7 +7,7 @@ export default function Footer() {
         <p className="text-label">
           © {new Date().getFullYear()} {personalInfo.name}
         </p>
-        <p className="text-label text-[#a1a1a6]">Designed & built with care in California.</p>
+        <p className="text-label text-[#a1a1a6]">Designed & built with care from INDIA.</p>
       </div>
     </footer>
   );
