@@ -191,7 +191,7 @@ export const education: Education[] = [
 export const socialLinks: SocialLink[] = [
   { platform: "LinkedIn", label: "LinkedIn", url: "https://linkedin.com/in/rjboga" },
   { platform: "GitHub", label: "GitHub", url: "https://github.com/RJBOGA" },
-  { platform: "Email", label: "Email", url: "mailto:rjboga1999@gmail.com" },
+  { platform: "Email", label: "Email", url: "mailto:rajub.dev@gmail.com" },
 ];
 
 export const navLinks = [
