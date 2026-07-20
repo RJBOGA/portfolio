@@ -34,7 +34,7 @@ export default function FloatingNav() {
             href="#top"
             className="flex items-center gap-2 press-scale"
             data-testid="nav-monogram"
-            aria-label="Raju Boga — home"
+            aria-label="Raju — home"
           >
             <span className="font-display font-bold text-[15px] tracking-tight text-[#1d1d1f]">
               {personalInfo.monogram}
