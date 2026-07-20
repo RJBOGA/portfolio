@@ -6,8 +6,6 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // Use repo subpath on GitHub Pages, root everywhere else (Lovable preview, custom domain, etc.)
-  base: mode === "production" && process.env.GITHUB_PAGES === "true" ? "/portfolio/" : "/",
   server: {
     host: "::",
     port: 8080,
