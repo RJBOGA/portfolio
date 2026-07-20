@@ -8,14 +8,13 @@ import type {
   Education,
   SocialLink,
 } from "@/types/portfolio";
-import portraitFormal from "@/assets/portrait-formal.jpg.asset.json";
-import portraitCandid from "@/assets/portrait-candid.jpg.asset.json";
-import dsiPresenting from "@/assets/dsi-presenting.jpg.asset.json";
+import portraitFormal from "@/assets/img/portrait.jpg";
+import dsiPresenting from "@/assets/img/dsi-presenting.jpg";
 
 export const media = {
-  portraitFormal: portraitFormal.url,
-  portraitCandid: portraitCandid.url,
-  dsiPresenting: dsiPresenting.url,
+  portraitFormal,
+  portraitCandid: portraitFormal,
+  dsiPresenting,
 };
 
 export const personalInfo: PersonalInfo = {
