@@ -1,17 +1,15 @@
-/**
- * Portfolio Type Definitions
- * TypeScript interfaces for portfolio data structures
- */
-
 export interface PersonalInfo {
   name: string;
+  firstName: string;
+  lastName: string;
+  monogram: string;
   title: string;
-  location: { city: string; country: string };
+  location: string;
   website: string;
   email: string;
-  avatar: string;
+  portrait: string;
+  bioLead: string;
   bio: string;
-  skills: string;
 }
 
 export interface Experience {
@@ -21,43 +19,39 @@ export interface Experience {
   location: string;
   startDate: string;
   endDate: string | null;
-  description: string;
-  media?: string;
+  impact: string[];
   current: boolean;
-}
-
-export interface Writing {
-  id: string;
-  title: string;
-  publication: string;
-  date: string;
-  url: string;
-  contributors?: string[];
-  featured: boolean;
-}
-
-export interface Speaking {
-  id: string;
-  event: string;
-  date: string;
-  location: string;
-  talk: string;
-  description?: string;
-  url?: string;
-  recordingUrl?: string;
-  slidesUrl?: string;
-  media?: string;
-  upcoming: boolean;
 }
 
 export interface Project {
   id: string;
   name: string;
+  tagline: string;
   description: string;
   techStack: string[];
+  image: string;
   liveUrl?: string;
   githubUrl?: string;
-  status: "active" | "archived";
+}
+
+export interface Achievement {
+  id: string;
+  metric: string;
+  label: string;
+  detail: string;
+}
+
+export interface SkillGroup {
+  id: string;
+  title: string;
+  icon: string;
+  span?: "sm" | "md" | "lg";
+  skills: string[];
+}
+
+export interface Stat {
+  value: string;
+  label: string;
 }
 
 export interface Education {
@@ -65,14 +59,12 @@ export interface Education {
   institution: string;
   degree: string;
   field: string;
-  startYear: string;
-  endYear: string;
   location: string;
-  details?: string;
+  years?: string;
 }
 
 export interface SocialLink {
   platform: string;
-  username?: string;
+  label: string;
   url: string;
 }
