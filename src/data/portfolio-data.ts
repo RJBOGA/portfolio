@@ -8,6 +8,15 @@ import type {
   Education,
   SocialLink,
 } from "@/types/portfolio";
+import portraitFormal from "@/assets/portrait-formal.jpg.asset.json";
+import portraitCandid from "@/assets/portrait-candid.jpg.asset.json";
+import dsiPresenting from "@/assets/dsi-presenting.jpg.asset.json";
+
+export const media = {
+  portraitFormal: portraitFormal.url,
+  portraitCandid: portraitCandid.url,
+  dsiPresenting: dsiPresenting.url,
+};
 
 export const personalInfo: PersonalInfo = {
   name: "Raju Boga",
@@ -18,12 +27,12 @@ export const personalInfo: PersonalInfo = {
   location: "United States",
   website: "linkedin.com/in/rjboga",
   email: "rjboga1999@gmail.com",
-  portrait:
-    "https://images.unsplash.com/photo-1752738372136-2602aaafdcb7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODh8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBzb2Z0d2FyZSUyMGVuZ2luZWVyJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzg0NTA4MjU4fDA&ixlib=rb-4.1.0&q=85",
+  portrait: portraitFormal.url,
   bioLead:
     "I build resilient full-stack systems that millions of people quietly rely on every day.",
   bio: "Everyone calls me RJ. For the last half-decade I've shipped mission-critical Angular and Java Spring Boot platforms for Fortune 500 banks, lenders, and healthcare giants. I lead legacy-to-modern migrations, obsess over UI performance, and prototype AI agents on the weekend — always looking for that moment where clean code meets a real-world problem and just clicks.",
 };
+
 
 export const stats: Stat[] = [
   { value: "5+", label: "Years shipping" },
