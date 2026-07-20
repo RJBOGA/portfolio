@@ -74,6 +74,23 @@ export default function ProjectsSection() {
                     </li>
                   ))}
                 </ul>
+                {p.links && p.links.length > 0 && (
+                  <ul className="mt-5 flex flex-wrap gap-2">
+                    {p.links.map((l) => (
+                      <li key={l.url}>
+                        <a
+                          href={l.url}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="inline-flex items-center gap-1.5 text-[12px] font-medium text-[#1d1d1f] px-3 py-1.5 rounded-full border border-[#e5e5ea] hover:bg-black/[0.03] press-scale"
+                        >
+                          {l.label}
+                          <ArrowUpRight size={12} strokeWidth={2} />
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
             </motion.article>
           ))}
