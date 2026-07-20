@@ -28,14 +28,13 @@ export default function BioSection() {
             variants={fadeUp}
             className="w-full max-w-[280px] lg:max-w-none lg:w-[320px]"
           >
-            <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-[#f5f5f7]">
+            <div className="aspect-[4/5] overflow-hidden rounded-2xl bg-[#f5f5f7]">
               <img
                 src={personalInfo.portrait}
                 alt={`${personalInfo.name} portrait`}
-                className="w-full h-full object-cover grayscale"
+                className="w-full h-full object-cover"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-black/20 pointer-events-none" aria-hidden />
             </div>
           </motion.div>
 
