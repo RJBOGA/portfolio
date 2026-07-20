@@ -21,7 +21,7 @@ export const media = {
 export const personalInfo: PersonalInfo = {
   name: "Raju Boga",
   firstName: "Raju",
-  lastName: "Boga",
+  lastName: "B",
   monogram: "RJ",
   title: "Senior Software Engineer",
   location: "United States",

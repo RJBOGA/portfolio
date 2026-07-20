@@ -39,7 +39,7 @@ export default function AchievementsSection() {
               <div className="aspect-[16/10] lg:aspect-auto lg:flex-1 overflow-hidden bg-[#f5f5f7]">
                 <img
                   src={media.dsiPresenting}
-                  alt="Raju Boga presenting at the Decision Sciences Institute conference"
+                  alt="Raju presenting at the Decision Sciences Institute conference"
                   loading="lazy"
                   className="w-full h-full object-cover"
                 />
