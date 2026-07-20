@@ -3,7 +3,11 @@ import { experience } from "@/data/portfolio-data";
 import { fadeUp, staggerContainer } from "@/lib/motion";
 import { format } from "date-fns";
 
-const fmt = (d: string | null) => (d ? format(new Date(d), "MMM yyyy") : "Present");
+const fmt = (d: string | null) => {
+  if (!d) return "Present";
+  const [year, month] = d.split("-").map(Number);
+  return format(new Date(year, month - 1, 1), "MMM yyyy");
+};
 
 export default function ExperienceTimeline() {
   return (
