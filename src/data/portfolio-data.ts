@@ -203,16 +203,6 @@ export const skillGroups: SkillGroup[] = [
 
 export const projects: Project[] = [
   {
-    id: "proj-eap",
-    name: "Employee Assistance Program",
-    tagline: "Confidential support at enterprise scale",
-    description:
-      "A confidential Angular + Spring Boot platform that routes employees through mental-health, financial, and legal resources across a Fortune 500 workforce — with elegant flows engineered for high-stakes moments.",
-    techStack: ["Angular", "Spring Boot", "AWS", "PostgreSQL"],
-    image:
-      "https://images.pexels.com/photos/29652324/pexels-photo-29652324.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-  },
-  {
     id: "proj-schoolpool",
     name: "SchoolPool",
     tagline: "Peer-to-peer campus rides, powered by real-time crime intel",
@@ -241,6 +231,16 @@ export const projects: Project[] = [
     links: [
       { label: "GitHub", url: "https://github.com/RJBOGA/JAP" },
     ],
+  },
+  {
+    id: "proj-eap",
+    name: "Employee Assistance Program",
+    tagline: "Confidential support at enterprise scale",
+    description:
+      "A confidential Angular + Spring Boot platform that routes employees through mental-health, financial, and legal resources across a Fortune 500 workforce — with elegant flows engineered for high-stakes moments.",
+    techStack: ["Angular", "Spring Boot", "AWS", "PostgreSQL"],
+    image:
+      "https://images.pexels.com/photos/29652324/pexels-photo-29652324.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
   },
 ];
 
