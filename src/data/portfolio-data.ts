@@ -8,14 +8,13 @@ import type {
   Education,
   SocialLink,
 } from "@/types/portfolio";
-import portraitFormal from "@/assets/portrait-formal.jpg.asset.json";
-import portraitCandid from "@/assets/portrait-candid.jpg.asset.json";
-import dsiPresenting from "@/assets/dsi-presenting.jpg.asset.json";
+import portraitFormal from "@/assets/img/portrait.jpg";
+import dsiPresenting from "@/assets/img/dsi-presenting.jpg";
 
 export const media = {
-  portraitFormal: portraitFormal.url,
-  portraitCandid: portraitCandid.url,
-  dsiPresenting: dsiPresenting.url,
+  portraitFormal,
+  portraitCandid: portraitFormal,
+  dsiPresenting,
 };
 
 export const personalInfo: PersonalInfo = {
@@ -27,7 +26,7 @@ export const personalInfo: PersonalInfo = {
   location: "United States",
   website: "linkedin.com/in/rjboga",
   email: "rajub.dev@gmail.com",
-  portrait: portraitFormal.url,
+  portrait: portraitFormal,
   bioLead:
     "I build resilient full-stack systems that millions of people quietly rely on every day.",
   bio: "Everyone calls me RJ. For the last half-decade I've shipped mission-critical Angular and Java Spring Boot platforms for Fortune 500 banks, lenders, and healthcare giants. I lead legacy-to-modern migrations, obsess over UI performance, and spend my free time playing and tinkering with AI — wiring up agents, chasing new models, and always looking for that moment where clean code meets a real-world problem and just clicks.",
