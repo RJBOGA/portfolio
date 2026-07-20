@@ -1,137 +1,193 @@
-/**
- * Portfolio Data
- * Single source of truth for all portfolio content
- */
-
 import type {
   PersonalInfo,
   Experience,
-  Writing,
-  Speaking,
   Project,
+  Achievement,
+  SkillGroup,
+  Stat,
   Education,
   SocialLink,
 } from "@/types/portfolio";
 
-import avatarAsset from "@/assets/dp.jpg.asset.json";
-import dsiTalkAsset from "@/assets/dsi-talk.jpg.asset.json";
-
-// ===== Portfolio Data =====
-
 export const personalInfo: PersonalInfo = {
   name: "Raju Boga",
-  title: "Senior Software Engineer · Full-Stack Architect · AI Tinkerer",
-  location: { city: "United States", country: "" },
+  firstName: "Raju",
+  lastName: "Boga",
+  monogram: "RJ",
+  title: "Senior Software Engineer",
+  location: "United States",
   website: "linkedin.com/in/rjboga",
   email: "rjboga1999@gmail.com",
-  avatar: avatarAsset.url,
-  bio: "Everyone calls me RJ. I'm a Senior Full-Stack Engineer who has spent the last half-decade shipping mission-critical Angular and Java Spring Boot systems for Fortune 500 banks, lenders, and healthcare giants — the kind of platforms millions of people quietly rely on every day.\n\nI'm an AWS Certified Solutions Architect obsessed with UI modernization, cloud-native architecture, and squeezing every last millisecond out of production systems. I've led sweeping legacy-to-modern migrations, mentored engineers across continents, and presented original research on the future of project management at the DSI conference.\n\nOutside of work, I'm relentlessly tinkering with AI — spinning up agents, prototyping GenAI copilots, and building weird little tools in my spare time to see what the models can really do. I live for that moment where clean code meets a real-world problem and just clicks.",
-  skills: "Angular, Java, Spring Boot, TypeScript, AWS, Cloud Architecture, UI Modernization, GenAI, LLM Agents, Prompt Engineering, System Design, SQL, Agile Leadership, Stakeholder Management",
+  portrait:
+    "https://images.unsplash.com/photo-1752738372136-2602aaafdcb7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODh8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjBzb2Z0d2FyZSUyMGVuZ2luZWVyJTIwcG9ydHJhaXR8ZW58MHx8fHwxNzg0NTA4MjU4fDA&ixlib=rb-4.1.0&q=85",
+  bioLead:
+    "I build resilient full-stack systems that millions of people quietly rely on every day.",
+  bio: "Everyone calls me RJ. For the last half-decade I've shipped mission-critical Angular and Java Spring Boot platforms for Fortune 500 banks, lenders, and healthcare giants. I lead legacy-to-modern migrations, obsess over UI performance, and prototype AI agents on the weekend — always looking for that moment where clean code meets a real-world problem and just clicks.",
 };
+
+export const stats: Stat[] = [
+  { value: "5+", label: "Years shipping" },
+  { value: "3", label: "Fortune 500 companies" },
+  { value: "2×", label: "Impact Award winner" },
+  { value: "AWS", label: "SAA-C03 certified" },
+];
 
 export const experience: Experience[] = [
   {
-    id: "exp-1",
+    id: "exp-citi",
     company: "Citi",
     role: "Software Engineer",
     location: "United States",
     startDate: "2026-05",
     endDate: null,
-    description: "Architecting high-throughput full-stack systems at one of the world's largest financial institutions — building resilient Angular front-ends and Spring Boot services that move serious money at global scale.",
     current: true,
+    impact: [
+      "Architecting high-throughput full-stack systems that move serious money at global scale.",
+      "Building resilient Angular front-ends and Spring Boot services at one of the world's largest financial institutions.",
+    ],
   },
   {
-    id: "exp-2",
+    id: "exp-rate",
     company: "Rate",
     role: "Software Engineer",
     location: "United States",
     startDate: "2024-02",
     endDate: "2026-05",
-    description: "Led sweeping UI modernization across the mortgage lending platform, re-engineering legacy flows into a snappy Angular + Spring Boot experience on AWS. Shipped features used by thousands of loan officers daily and drove measurable wins in performance, conversion, and developer velocity.",
     current: false,
+    impact: [
+      "Led a sweeping UI modernization across the mortgage lending platform, re-engineering legacy flows into a snappy Angular + Spring Boot experience on AWS.",
+      "Shipped features used daily by thousands of loan officers and drove measurable wins in performance, conversion, and developer velocity.",
+      "Mentored engineers on cloud architecture, performance patterns, and shared component design.",
+    ],
   },
   {
-    id: "exp-3",
-    company: "Carelon Global Solutions India",
+    id: "exp-carelon",
+    company: "Carelon Global Solutions",
     role: "Software Engineer",
     location: "India",
     startDate: "2021-11",
     endDate: "2023-07",
-    description: "Cut my teeth building enterprise healthcare platforms serving millions of members — partnering with product, design, and business stakeholders in a fast-moving Agile org, and quickly graduating from IC work to owning end-to-end features.",
     current: false,
+    impact: [
+      "Built enterprise healthcare platforms serving millions of members across Anthem's ecosystem.",
+      "Graduated fast from IC work to owning end-to-end features in a high-velocity Agile organization.",
+      "Partnered with product, design, and business stakeholders across continents.",
+    ],
   },
 ];
 
-export const writing: Writing[] = [];
-
-export const speaking: Speaking[] = [
+export const skillGroups: SkillGroup[] = [
   {
-    id: "talk-1",
-    event: "DSI Annual Conference",
-    date: "2024-11-01",
-    location: "United States",
-    talk: "Project Management for the Future: Leveraging Technology and Sustainability",
-    description:
-      "Presented original research alongside Dr. Vatsal Paghadal and Dr. Benjamin George at the Decision Sciences Institute conference, exploring how emerging tech and sustainability practices are reshaping modern project management.",
-    media: dsiTalkAsset.url,
-    upcoming: false,
+    id: "skill-frontend",
+    title: "Front-end craft",
+    icon: "Layout",
+    span: "lg",
+    skills: ["Angular", "TypeScript", "React", "Tailwind", "Framer Motion", "UI Modernization"],
+  },
+  {
+    id: "skill-backend",
+    title: "Back-end & APIs",
+    icon: "Server",
+    skills: ["Java", "Spring Boot", "REST", "GraphQL", "SQL"],
+  },
+  {
+    id: "skill-cloud",
+    title: "Cloud & platform",
+    icon: "Cloud",
+    skills: ["AWS SAA-C03", "Lambda", "S3", "CloudFront", "System Design"],
+  },
+  {
+    id: "skill-ai",
+    title: "Applied AI",
+    icon: "Sparkles",
+    span: "md",
+    skills: ["LLM Agents", "GenAI", "Prompt Engineering", "RAG"],
+  },
+  {
+    id: "skill-lead",
+    title: "Leadership",
+    icon: "Users",
+    skills: ["Agile", "Mentorship", "Stakeholder Management"],
   },
 ];
 
 export const projects: Project[] = [
   {
-    id: "proj-1",
-    name: "AI Agent Playground",
+    id: "proj-eap",
+    name: "Employee Assistance Program",
+    tagline: "Confidential support at enterprise scale",
     description:
-      "A personal sandbox of LLM-powered agents — from autonomous research assistants to code-review copilots — built to push the limits of what modern GenAI can do in real workflows.",
-    techStack: ["TypeScript", "OpenAI", "LangChain", "Next.js"],
-    status: "active",
+      "A confidential Angular + Spring Boot platform that routes employees through mental-health, financial, and legal resources across a Fortune 500 workforce — with elegant flows engineered for high-stakes moments.",
+    techStack: ["Angular", "Spring Boot", "AWS", "PostgreSQL"],
+    image:
+      "https://images.pexels.com/photos/29652324/pexels-photo-29652324.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
   },
   {
-    id: "proj-2",
-    name: "Enterprise GenAI Automations",
+    id: "proj-alumni",
+    name: "Alumni Services App",
+    tagline: "A modern home for a life-long community",
     description:
-      "Prototypes that plug LLMs into legacy enterprise systems — turning tedious manual workflows into one-click, AI-assisted experiences.",
-    techStack: ["Python", "Spring Boot", "LLMs", "AWS"],
-    status: "active",
+      "Re-imagined the alumni experience from a dated portal into a snappy, mobile-first web app — event RSVPs, giving, mentorship, and directory search, all glued together with a bespoke design system.",
+    techStack: ["Angular", "Java", "AWS", "Design System"],
+    image:
+      "https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGxpZ2h0JTIwZmx1aWQlMjBtaW5pbWFsJTIwYmFja2dyb3VuZHxlbnwwfHx8d2hpdGV8MTc4NDUwODI1OHww&ixlib=rb-4.1.0&q=85",
+  },
+];
+
+export const achievements: Achievement[] = [
+  {
+    id: "ach-impact-1",
+    metric: "2×",
+    label: "Impact Award",
+    detail: "Recognized twice for outsized delivery on mission-critical initiatives.",
+  },
+  {
+    id: "ach-dsi",
+    metric: "DSI",
+    label: "Published research",
+    detail:
+      "Co-presented at the Decision Sciences Institute on technology + sustainability in modern project management.",
+  },
+  {
+    id: "ach-aws",
+    metric: "AWS",
+    label: "Solutions Architect — Associate",
+    detail: "SAA-C03 certified. Cloud-native architecture is the day job, not the résumé line.",
+  },
+  {
+    id: "ach-scale",
+    metric: "M+",
+    label: "Users served",
+    detail: "Shipped platforms touching millions of end-users across banking, lending, and healthcare.",
   },
 ];
 
 export const education: Education[] = [
   {
-    id: "edu-1",
+    id: "edu-ucm",
     institution: "University of Central Missouri",
     degree: "Master's",
     field: "Information Technology",
-    startYear: "",
-    endYear: "",
     location: "Warrensburg, MO",
   },
   {
-    id: "edu-2",
-    institution: "VNR Vignana Jyothi Institute of Engineering and Technology",
+    id: "edu-vnr",
+    institution: "VNR Vignana Jyothi Institute of Engineering & Technology",
     degree: "Bachelor's",
     field: "Information Technology",
-    startYear: "",
-    endYear: "",
     location: "Hyderabad, India",
   },
 ];
 
 export const socialLinks: SocialLink[] = [
-  {
-    platform: "LinkedIn",
-    username: "rjboga",
-    url: "https://linkedin.com/in/rjboga",
-  },
-  {
-    platform: "GitHub",
-    username: "RJBOGA",
-    url: "https://github.com/RJBOGA",
-  },
-  {
-    platform: "Email",
-    username: "rjboga1999@gmail.com",
-    url: "mailto:rjboga1999@gmail.com",
-  },
+  { platform: "LinkedIn", label: "LinkedIn", url: "https://linkedin.com/in/rjboga" },
+  { platform: "GitHub", label: "GitHub", url: "https://github.com/RJBOGA" },
+  { platform: "Email", label: "Email", url: "mailto:rjboga1999@gmail.com" },
+];
+
+export const navLinks = [
+  { id: "work", label: "Work", href: "#work" },
+  { id: "projects", label: "Projects", href: "#projects" },
+  { id: "about", label: "About", href: "#about" },
+  { id: "contact", label: "Contact", href: "#contact" },
 ];
