@@ -35,7 +35,7 @@ export default function BioSection() {
                 className="w-full h-full object-cover grayscale"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-black/50 pointer-events-none" aria-hidden />
+              <div className="absolute inset-0 bg-black/20 pointer-events-none" aria-hidden />
             </div>
           </motion.div>
 
