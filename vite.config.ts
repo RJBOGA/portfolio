@@ -6,6 +6,8 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  // Use "/" for Lovable preview/publish; override with GH Pages repo path in the deploy workflow.
+  base: process.env.VITE_BASE_PATH ?? "/",
   server: {
     host: "::",
     port: 8080,
