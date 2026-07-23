@@ -38,6 +38,13 @@ export interface Project {
   liveUrl?: string;
   githubUrl?: string;
   links?: ProjectLink[];
+  beats?: {
+    problem: string;
+    did: string;
+    result: string;
+    resultLinks?: ProjectLink[];
+    takeaway: string;
+  };
 }
 
 export interface Achievement {
