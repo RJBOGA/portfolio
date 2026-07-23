@@ -29,7 +29,7 @@ export const personalInfo: PersonalInfo = {
   portrait: portraitFormal,
   bioLead:
     "I build resilient full-stack systems that millions of people quietly rely on every day.",
-  bio: "Everyone calls me RJ. For the last half-decade I've shipped mission-critical Angular and Java Spring Boot platforms for Fortune 500 banks, lenders, and healthcare giants. I lead legacy-to-modern migrations, obsess over UI performance, and spend my free time playing and tinkering with AI — wiring up agents, chasing new models, and always looking for that moment where clean code meets a real-world problem and just clicks.",
+  bio: "Everyone calls me RJ. For the last half-decade I've shipped mission-critical Angular and Java Spring Boot platforms for Fortune 500 banks, lenders, and healthcare giants. I lead legacy-to-modern migrations, obsess over system performance, and I am currently building the next generation of AI-native products — wiring up autonomous agents and looking for that exact moment where complex AI models solve real-world business problems.",
 };
 
 
