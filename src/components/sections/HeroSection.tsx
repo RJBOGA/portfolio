@@ -27,7 +27,7 @@ export default function HeroSection() {
           transition={{ ...spring, delay: 0.05 }}
           className="text-hero-eyebrow mb-10 md:mb-14"
         >
-          {personalInfo.title} · {personalInfo.monogram}
+          {personalInfo.title} · {personalInfo.monogram} · Building Applied AI products
         </motion.p>
 
         <motion.h1
