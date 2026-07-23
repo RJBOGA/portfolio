@@ -202,6 +202,22 @@ export const skillGroups: SkillGroup[] = [
 
 export const projects: Project[] = [
   {
+    id: "proj-voice-agents",
+    name: "AI Voice Agents",
+    tagline: "Currently building · 100x Applied AI Cohort",
+    description:
+      "Autonomous AI voice agents designed to handle customer workflows for small businesses — validating and architecting as part of the 100x Applied AI Cohort.",
+    techStack: ["LLM Agents", "Voice AI", "Workflow Automation"],
+    image:
+      "https://images.pexels.com/photos/29652324/pexels-photo-29652324.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    beats: {
+      problem: "Small businesses lose massive revenue from missed calls and manual order taking.",
+      did: "Currently validating and architecting autonomous AI voice agents designed to handle customer workflows as part of the 100x Applied AI Cohort.",
+      result: "TBD.",
+      takeaway: "I am actively developing AI solutions that drive immediate, measurable business value.",
+    },
+  },
+  {
     id: "proj-jobchat",
     name: "JobChat.AI",
     tagline: "A conversational job portal that speaks plain English",
@@ -239,22 +255,6 @@ export const projects: Project[] = [
         { label: "Crime News API", url: "https://github.com/RJBOGA/newsapi" },
       ],
       takeaway: "I deliver secure, end-to-end platforms that handle complex external integrations.",
-    },
-  },
-  {
-    id: "proj-voice-agents",
-    name: "AI Voice Agents",
-    tagline: "Currently building · 100x Applied AI Cohort",
-    description:
-      "Autonomous AI voice agents designed to handle customer workflows for small businesses — validating and architecting as part of the 100x Applied AI Cohort.",
-    techStack: ["LLM Agents", "Voice AI", "Workflow Automation"],
-    image:
-      "https://images.pexels.com/photos/29652324/pexels-photo-29652324.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    beats: {
-      problem: "Small businesses lose massive revenue from missed calls and manual order taking.",
-      did: "Currently validating and architecting autonomous AI voice agents designed to handle customer workflows as part of the 100x Applied AI Cohort.",
-      result: "TBD.",
-      takeaway: "I am actively developing AI solutions that drive immediate, measurable business value.",
     },
   },
 ];
