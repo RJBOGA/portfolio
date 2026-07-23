@@ -46,8 +46,8 @@ export default function HeroSection() {
           className="mt-14 md:mt-20 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-8"
         >
           <p className="max-w-md text-[15px] leading-relaxed text-[#555559]">
-            I am currently six months out from launching a B2B AI automation agency. From
-            shipping mission-critical infrastructure at Citi to building conversational AI products.
+            I am currently six months out from launching a B2B AI automation agency — from
+            shipping secure, mission-critical full-stack apps at Citi to building conversational AI products that solve real-world problems.
           </p>
 
           <div className="flex items-center gap-3">
