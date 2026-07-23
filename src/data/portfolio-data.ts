@@ -44,7 +44,7 @@ export const experience: Experience[] = [
   {
     id: "exp-citi",
     company: "Citi",
-    role: "Software Engineer",
+    role: "Senior Software Engineer",
     location: "United States",
     startDate: "2026-05",
     endDate: null,
