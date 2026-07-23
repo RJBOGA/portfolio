@@ -30,26 +30,14 @@ export default function HeroSection() {
           {personalInfo.title} · {personalInfo.monogram}
         </motion.p>
 
-        <div className="space-y-0 leading-none">
-          <motion.h1
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ ...spring, delay: 0.1 }}
-            className="text-display text-[#1d1d1f]"
-          >
-            {personalInfo.firstName.toUpperCase()}
-          </motion.h1>
-          <motion.h1
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ ...spring, delay: 0.18 }}
-            className="text-display text-outline"
-            aria-hidden="true"
-          >
-            {personalInfo.lastName.toUpperCase()}
-          </motion.h1>
-          <span className="sr-only">{personalInfo.lastName}</span>
-        </div>
+        <motion.h1
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ ...spring, delay: 0.1 }}
+          className="text-display text-[#1d1d1f] max-w-[18ch]"
+        >
+          I bridge the gap between enterprise architecture and Applied AI.
+        </motion.h1>
 
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -58,8 +46,8 @@ export default function HeroSection() {
           className="mt-14 md:mt-20 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-8"
         >
           <p className="max-w-md text-[15px] leading-relaxed text-[#555559]">
-            Full-stack architect building refined Angular + Spring Boot systems for Fortune 500 banks,
-            lenders, and healthcare giants. Currently at Citi.
+            I am currently six months out from launching a B2B AI automation agency. From
+            shipping mission-critical infrastructure at Citi to building conversational AI products.
           </p>
 
           <div className="flex items-center gap-3">
@@ -72,11 +60,11 @@ export default function HeroSection() {
               <ArrowDownRight size={16} strokeWidth={1.75} />
             </a>
             <a
-              href="#contact"
+              href={`mailto:${personalInfo.email}`}
               className="inline-flex items-center gap-2 border border-[#e5e5ea] text-[#1d1d1f] px-6 py-3 rounded-full text-[14px] font-medium hover:bg-black/[0.03] press-scale"
               data-testid="hero-cta-contact"
             >
-              Get in touch
+              Email me to talk AI Architecture
             </a>
           </div>
         </motion.div>

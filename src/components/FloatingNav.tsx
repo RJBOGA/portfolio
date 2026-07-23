@@ -56,11 +56,11 @@ export default function FloatingNav() {
               </a>
             ))}
             <a
-              href="#contact"
+              href={`mailto:${personalInfo.email}`}
               className="ml-2 px-5 py-2 text-[13px] font-medium bg-[#1d1d1f] text-white rounded-full hover:bg-[#333336] transition-colors press-scale"
               data-testid="nav-cta"
             >
-              Let's talk
+              Email me to talk AI Architecture
             </a>
           </div>
 
@@ -98,12 +98,12 @@ export default function FloatingNav() {
                 </a>
               ))}
               <a
-                href="#contact"
+                href={`mailto:${personalInfo.email}`}
                 onClick={() => setOpen(false)}
                 className="mt-1 mx-2 mb-1 px-5 py-3 text-[15px] font-medium bg-[#1d1d1f] text-white rounded-2xl text-center"
                 data-testid="mobile-cta"
               >
-                Let's talk
+                Email me to talk AI Architecture
               </a>
             </div>
           </motion.div>
