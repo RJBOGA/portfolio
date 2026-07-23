@@ -17,8 +17,8 @@ export default function Index() {
       <HeroSection />
       <MarqueeSection />
       <BioSection />
-      <ExperienceTimeline />
       <ProjectsSection />
+      <ExperienceTimeline />
       <SkillsBento />
       <AchievementsSection />
       <EducationTimeline />
