@@ -202,44 +202,60 @@ export const skillGroups: SkillGroup[] = [
 
 export const projects: Project[] = [
   {
-    id: "proj-schoolpool",
-    name: "SchoolPool",
-    tagline: "Peer-to-peer campus rides, powered by real-time crime intel",
-    description:
-      "A full-stack peer-to-peer ride-sharing platform that connects university students for safe, affordable, and convenient campus travel — with dedicated experiences for Students, Drivers, and Admins. An integrated crime-news analyzer scans and scores routes before a booking is confirmed, so students ride with context, not guesswork.",
-    techStack: ["React", "Spring Boot", "PostgreSQL", "News API"],
-    image:
-      "https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGxpZ2h0JTIwZmx1aWQlMjBtaW5pbWFsJTIwYmFja2dyb3VuZHxlbnwwfHx8d2hpdGV8MTc4NDUwODI1OHww&ixlib=rb-4.1.0&q=85",
-    liveUrl: "https://github.com/RJBOGA/school-pool-frontend",
-    links: [
-      { label: "Frontend", url: "https://github.com/RJBOGA/school-pool-frontend" },
-      { label: "Backend", url: "https://github.com/RJBOGA/schoolpool-be" },
-      { label: "Crime News API", url: "https://github.com/RJBOGA/newsapi" },
-    ],
-  },
-  {
     id: "proj-jobchat",
     name: "JobChat.AI",
     tagline: "A conversational job portal that speaks plain English",
     description:
-      "A conversational job portal where users find roles, manage applications, and query data by simply typing what they want. An NL2GQL service translates natural language into live GraphQL queries in real time, backed by a Flask API, MongoDB, and an LLM — with a React chat UI, secure bcrypt auth, and a collapsible view to inspect the raw GraphQL and JSON behind every answer.",
+      "A conversational job portal where users find roles, manage applications, and query data by simply typing what they want. An NL2GQL service translates natural language into live GraphQL queries in real time, backed by a Flask API, MongoDB, and an LLM.",
     techStack: ["React", "Python", "Flask", "GraphQL", "MongoDB", "LLM"],
     image:
       "https://images.unsplash.com/photo-1587560699334-cc4ff634909a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGxpZ2h0JTIwZmx1aWQlMjBtaW5pbWFsJTIwYmFja2dyb3VuZHxlbnwwfHx8d2hpdGV8MTc4NDUwODI1OHww&ixlib=rb-4.1.0&q=85",
     liveUrl: "https://github.com/RJBOGA/JAP",
-    links: [
-      { label: "GitHub", url: "https://github.com/RJBOGA/JAP" },
-    ],
+    beats: {
+      problem: "Navigating job portals is manual, slow, and rigid.",
+      did: "Built a conversational UI using React, Python, and an LLM that translates plain English into live GraphQL queries in real-time.",
+      result: "Source and demo on GitHub.",
+      resultLinks: [{ label: "GitHub", url: "https://github.com/RJBOGA/JAP" }],
+      takeaway: "I can seamlessly bridge natural language models with complex database architectures.",
+    },
   },
   {
-    id: "proj-eap",
-    name: "Employee Assistance Program",
-    tagline: "Confidential support at enterprise scale",
+    id: "proj-schoolpool",
+    name: "SchoolPool",
+    tagline: "Peer-to-peer campus rides, powered by real-time crime intel",
     description:
-      "A confidential Angular + Spring Boot platform that routes employees through mental-health, financial, and legal resources across a Fortune 500 workforce — with elegant flows engineered for high-stakes moments.",
-    techStack: ["Angular", "Spring Boot", "AWS", "PostgreSQL"],
+      "A full-stack peer-to-peer ride-sharing platform that connects university students for safe, affordable campus travel. An integrated crime-news analyzer scans and scores routes before a booking is confirmed.",
+    techStack: ["React", "Spring Boot", "PostgreSQL", "News API"],
+    image:
+      "https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGxpZ2h0JTIwZmx1aWQlMjBtaW5pbWFsJTIwYmFja2dyb3VuZHxlbnwwfHx8d2hpdGV8MTc4NDUwODI1OHww&ixlib=rb-4.1.0&q=85",
+    liveUrl: "https://github.com/RJBOGA/school-pool-frontend",
+    beats: {
+      problem: "University transit is disconnected and lacks integrated safety intel.",
+      did: "Shipped a full-stack Spring Boot and React ride-sharing platform that evaluates routes using a real-time crime news API.",
+      result: "Three-repo platform on GitHub.",
+      resultLinks: [
+        { label: "Frontend", url: "https://github.com/RJBOGA/school-pool-frontend" },
+        { label: "Backend", url: "https://github.com/RJBOGA/schoolpool-be" },
+        { label: "Crime News API", url: "https://github.com/RJBOGA/newsapi" },
+      ],
+      takeaway: "I deliver secure, end-to-end platforms that handle complex external integrations.",
+    },
+  },
+  {
+    id: "proj-voice-agents",
+    name: "AI Voice Agents",
+    tagline: "Currently building · 100x Applied AI Cohort",
+    description:
+      "Autonomous AI voice agents designed to handle customer workflows for small businesses — validating and architecting as part of the 100x Applied AI Cohort.",
+    techStack: ["LLM Agents", "Voice AI", "Workflow Automation"],
     image:
       "https://images.pexels.com/photos/29652324/pexels-photo-29652324.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    beats: {
+      problem: "Small businesses lose massive revenue from missed calls and manual order taking.",
+      did: "Currently validating and architecting autonomous AI voice agents designed to handle customer workflows as part of the 100x Applied AI Cohort.",
+      result: "TBD.",
+      takeaway: "I am actively developing AI solutions that drive immediate, measurable business value.",
+    },
   },
 ];
 
