@@ -50,8 +50,8 @@ export const experience: Experience[] = [
     endDate: null,
     current: true,
     impact: [
-      "Architecting high-throughput full-stack systems that move serious money at global scale.",
-      "Building resilient Angular front-ends and Spring Boot services at one of the world's largest financial institutions.",
+      "Migrating and stabilizing the enterprise Multi-Factor Authentication platform — the single point of entry for the entire organization.",
+      "Architecting high-throughput full-stack systems on Angular and Spring Boot that move serious money at global scale.",
     ],
   },
   {
@@ -63,8 +63,8 @@ export const experience: Experience[] = [
     endDate: "2026-05",
     current: false,
     impact: [
-      "Led a sweeping UI modernization across the mortgage lending platform, re-engineering legacy flows into a snappy Angular + Spring Boot experience on AWS.",
-      "Shipped features used daily by thousands of loan officers and drove measurable wins in performance, conversion, and developer velocity.",
+      "Built a new full-stack platform powering student loans and mortgage origination for thousands of loan officers.",
+      "Led a sweeping UI modernization, re-engineering legacy flows into a snappy Angular + Spring Boot experience on AWS.",
       "Mentored engineers on cloud architecture, performance patterns, and shared component design.",
     ],
   },
@@ -77,9 +77,9 @@ export const experience: Experience[] = [
     endDate: "2023-07",
     current: false,
     impact: [
-      "Built enterprise healthcare platforms serving millions of members across Anthem's ecosystem.",
-      "Graduated fast from IC work to owning end-to-end features in a high-velocity Agile organization.",
-      "Partnered with product, design, and business stakeholders across continents.",
+      "Migrated the full-stack Employee Assistance Program application for Anthem, modernizing legacy flows without disrupting members.",
+      "Built and integrated a third-party API connecting with pharmacies across the US to validate Rx customers in real time.",
+      "Owned end-to-end features in a high-velocity Agile org and partnered with product, design, and business stakeholders across continents.",
     ],
   },
 ];
