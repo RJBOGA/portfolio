@@ -1,5 +1,5 @@
-import PortfolioV2 from "@/components/PortfolioV2";
+import PortfolioV3 from "@/components/PortfolioV3";
 
 export default function Index() {
-  return <PortfolioV2 />;
+  return <PortfolioV3 />;
 }
